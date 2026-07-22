@@ -221,3 +221,54 @@ section{
 .pil:hover{
 	background:var(--primary);
 }
+
+.about-grid{
+	display:grid;
+	grid-template-columns:2fr 1fr;
+	gap:50px;
+	align items:start;
+}
+
+.about-grid p{
+	margin-bottom:20px;
+	color:var(--text-muted);
+	font-size:1.05rem;
+	line-height:1.9;
+}
+
+.about-grid strong{
+	color:var(--primary-light);
+}
+
+.fact-list{
+	list-style:none;
+	display:flex;
+	flex-direction:column;
+	gap:15px;
+}
+
+.fact-list li{
+	display:flex;
+	justify-content:space-between;
+	background:var(--surface);
+	border:1px  solid var(--border);
+	border-radius:12px;
+	padding:16px 20px;
+	transition:.3s;
+}
+
+.fact-list:hover{
+	transform:translateY(8px);
+	border-color:var(--primary);
+}
+
+.fact-list span:first-child{
+	color:var(--text-muted);
+	font-weight:500;
+}
+
+.fact-list span:last-child{
+	color:white;
+	font-weight:600;
+	text-align:right;
+}
