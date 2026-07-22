@@ -175,3 +175,49 @@ section{
 	box-shadow:var(--shadow);
 }
 
+.project-grid{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+	gap:35px;
+}
+
+.project-card{
+	background:var(--surface);
+	border:1px solid car(--border);
+	border-radius:18px;
+	padding:35px;
+	transition:.3s;
+}
+
+.project-card:hover{
+	transform:translateY(-4px);
+	border-color:var(--primary);
+}
+
+.tag{
+	display:inline-block;
+	background:rgba(193,18,31,.18);
+	color:#ff7a7a;
+	padding:8px 15px;
+	border-radius:20px;
+	margin-bottom:18px;
+	font-size:.9rem;
+}
+
+.pill-row{
+	display:flex;
+	flex-wrap:wrap;
+	gap:12px;
+	margin-top:15px;
+}
+
+.pill{
+	background:#222;
+	padding:10px 18px;
+	border-radius:30px;
+	transition:.3s;
+}
+
+.pil:hover{
+	background:var(--primary);
+}
