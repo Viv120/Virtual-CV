@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivicia Freemantle | Portfolio </title>
+	<link rel="icon" type="image/png" href="images/logo.png">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<meta name="description" content="Vivicia Cathryn Freemantle - BSc Information Technology student 
+	showcasing projects, technical skills, education, certifications and software development experience.">
 </head>
 <body>
 
 	<nav>
-		<a href="home" class="logo">
-			<img src="images/Logo.png" alt="Logo">
+		<div class="logo">
+			<a href="#home"> 
+				<img src="images/Logo.png" alt="Logo">
+			</a>
+		
 			<div class="logo-text">
 				<span class="logo-name">Vivicia Cathryn Freemantle</span>
 				<span class="logo-title">IT Student</span>
 			</div>
-		</a>
+		</div>
+		
+		<button class="menu-toggle" aria-label="Toggle navigation">
+        ☰
+		</button>
 		
 		<ul>
 			<li><a href="#home">Home</a></li>
@@ -81,12 +92,12 @@
 		<div class="hero-right">
 		
 		<img
-			src="images/CV photo.jpeg"
+			src="images/CV-photo.jpeg"
 			alt="Vivicia Freemantle"
 			class="profile-photo">
 			
 		<div class="credit-card">
-			<div class="label">Degree progress</div>
+			<div class="label">Degree Progress</div>
 			<div class="credit-number">328<span> / 392 credits</span></div>
 			<div class="bar-track"><div class="bar-fill" id="creditBar"></div></div>
 			<div class="credit-foot"><span>Year 3 of 3</span><span>~84% complete</span></div>
@@ -124,7 +135,7 @@
 			<ul class="fact-list reveal">
 				<li><span>Institution</span><span>North West University</span></li>
 				<li><span>Programme</span><span>BSc Information Technology</span></li>
-				<li><span>Progress</span><span>Third-Year, in progress</span></li>
+				<li><span>Progress</span><span>Third-Year, In Progress</span></li>
 				<li><span>Honours</span><span>Golden Key (Top 15%)</span></li>
 				<li><span>Location</span><span>Germiston, South Africa</span></li>
 				<li><span>Languages</span><span>Afrikaans, English</span></li>
@@ -148,7 +159,7 @@
 			
 			<div class="education-tabs reveal">
 			
-				<button class="education-tab active" data-edu="education">
+				<button class="education-tab active" data-edu="education-tab">
 					Education
 				</button>
 				
@@ -162,7 +173,7 @@
 				
 			</div>
 			
-			<div class="education-content active" id="education">
+			<div class="education-content active" id="education-tab">
 			
 				<div class="education-grid">
 				
@@ -236,87 +247,249 @@
 			</div>
 			
 			<div class="education-content" id="results">
+				<h3>Academic Transcript</h3>
 
-				<h3>National Senior Certificate (IEB) - 2023</h3>
+					<div class="ledger-tabs">
+					
+						<button class="ledger-tab active" data-tab="m">
+							Matric - 2023
+						</button>
 
-				<div class="ledger-row head">
-					<span>Subject</span>
-					<span>Result</span>
-					<span></span>
-				</div>
+						<button class="ledger-tab" data-tab="y1">
+							First Year - 2024
+						</button>
 
-				<div class="ledger-row">
-					<span>Computer Applications Technology</span>
-					<span>89%</span>
-					<span></span>
-				</div>
+						<button class="ledger-tab" data-tab="y2">
+							Second Year - 2025
+						</button>
 
-				<div class="ledger-row">
-					<span>English First Additional Language</span>
-					<span>83%</span>
-					<span></span>
-				</div>
-
-				<div class="ledger-row">
-					<span>Life Orientation</span>
-					<span>81%</span>
-					<span></span>
-				</div>
-
-				<div class="ledger-row">
-					<span>Afrikaans Home Language</span>
-					<span>80%</span>
-					<span></span>
-				</div>
-
-				<div class="ledger-row">
-					<span>Life Sciences</span>
-					<span>77%</span>
-					<span></span>
-				</div>
-
-				<div class="ledger-row">
-					<span>Mathematics</span>
-					<span>72%</span>
-					<span></span>
-				</div>
-
-				<div class="ledger-row">
-					<span>Physical Sciences</span>
-					<span>69%</span>
-					<span></span>
-				</div>
-
-				<br><br>
-				
-				<h3>University Results</h3>
-
-				<div class="ledger-tabs">
-
-					<button class="ledger-tab active" data-tab="y1">
-						First Year - 2024
-					</button>
-
-					<button class="ledger-tab" data-tab="y2">
-						Second Year - 2025
-					</button>
-
-					<button class="ledger-tab" data-tab="y3">
-						Third Year - In Progress
-					</button>
-
-				</div>
+						<button class="ledger-tab" data-tab="y3">
+							Third Year - In Progress
+						</button>
+					</div>
 
 				<div class="ledger-reveal">
+					
+					<div class="ledger-panel active" id="m">
+					
+						<div class="ledger-row head">
+							<span>Subject</span>
+							<span>Result</span>
+							<span>Overall Average: 79%</span>
+						</div>
+							
+						<div class="ledger-row">	
+							<span>Physical Sciences</span>
+						
+							<div class="mark-progress">
+						
+								<span class="mark-score">69%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:69%;"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="ledger-row">
+							<span>Computer Applications Technology</span>
+						
+							<div class="mark-progress">
+						
+								<span class="mark-score">89%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:89%;"></div>
+								</div>
+							</div>
+						</div>
 
-					<div class="ledger-panel active" id="y1">
+						<div class="ledger-row">
+							<span>English First Additional Language</span>
+							
+							<div class="mark-progress">
+							
+								<span class="mark-score">83%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:83%;"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ledger-row">
+							<span>Life Orientation</span>
+							
+							<div class="mark-progress">
+							
+								<span class="mark-score">81%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:81%;"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ledger-row">
+							<span>Afrikaans Home Language</span>
+							
+							<div class="mark-progress">
+							
+								<span class="mark-score">80%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:80%;"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ledger-row">
+							<span>Life Sciences</span>
+							
+							<div class="mark-progress">
+							
+								<span class="mark-score">77%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:77%;"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ledger-row">
+							<span>Mathematics</span>
+							
+							<div class="mark-progress">
+							
+								<span class="mark-score">72%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:72%;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="ledger-panel" id="y1">
 
 						<div class="ledger-row head">
 							<span>Module</span>
 							<span>Grade</span>
-							<span></span>
+							<span>Overall Average: 79%</span>
 						</div>
 						
+						<div class="ledger-row">
+							<span>Introductory Algebra and Calculus I</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">65%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:65%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Descriptive Statistics</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">91%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:91%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Financial Accountancy I (Special)</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">80%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:80%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Introduction to Computing and Programming</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">82%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:82%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Introduction to Business Management</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">78%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:78%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Intro Stat Inference I</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">84%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:84%;"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="ledger-row">
+							<span>Structured Programming</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">68%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:68%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>User Interface Programming I</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">86%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:86%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Financial Accounting II (Special)</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">81%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:81%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Academic Literacy Development</span>
+								
+							<div class="mark-progress">
+							
+								<span class="mark-score">72%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:72%;"></div>
+								</div>
+							</div>
+						</div>
 					</div>
 
 					<div class="ledger-panel" id="y2">
@@ -324,9 +497,153 @@
 						<div class="ledger-row head">
 							<span>Module</span>
 							<span>Grade</span>
-							<span></span>
+							<span>Overall Average: 82%</span>
 						</div>
-						
+							
+						<div class="ledger-row">
+							<span>Object Orientated Programming</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">83%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:83%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Apps And Advanced User Interface Programming</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">96%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:96%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>System Analysis And Design I</span>
+								
+							<div class="mark-progress">
+							
+								<span class="mark-score">78%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:78%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Communication Skills</span>
+								
+							<div class="mark-progress">
+							
+								<span class="mark-score">82%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:82%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Information Security</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">79%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:79%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Understanding The Natural World I</span>
+							
+							<div class="mark-progress">
+								
+								<span class="mark-score">79%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:79%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Data Structures And Algorithms</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">75%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:75%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Data Analytics II</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">80%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:80%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>System Analysis And Design II</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">75%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:75%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Discrete Mathematics</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">80%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:80%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Problem Solving For Managers</span>
+							
+							<div class="mark-progress">
+								
+								<span class="mark-score">87%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:87%;"></div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ledger-row">
+							<span>Understanding The Natural World II</span>
+								
+							<div class="mark-progress">
+								
+								<span class="mark-score">87%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:87%;"></div>
+								</div>
+							</div>
+						</div>
+							
 					</div>
 
 					<div class="ledger-panel" id="y3">
@@ -334,13 +651,110 @@
 						<div class="ledger-row head">
 							<span>Module</span>
 							<span>Grade</span>
-							<span></span>
+							<span>Current Average: 70%</span>
+						</div>
+						
+						<div class="ledger-row">
+							<span>Databases</span>
+							
+							<div class="mark-progress">
+							
+								<span class="mark-score">69%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:69%;"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="ledger-row">
+							<span>Decision Support Systems I</span>
+							
+							<div class="mark-progress">
+							
+								<span class="mark-score">82%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:82%;"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="ledger-row">
+							<span>Artificial intelligence</span>
+							
+							<div class="mark-progress">
+							
+								<span class="mark-score">60%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:60%;"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="ledger-row">
+							<span>Computer Networks</span>
+							
+							<div class="mark-progress">
+							
+								<span class="mark-score">68%</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:68%;"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="ledger-row">
+							<span>Advanced Databases</span>
+							
+							<div class="mark-progress">
+							
+								<span class="mark-score">In progress</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:0%;"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="ledger-row">
+							<span>Decision Support Systems II</span>
+							
+							<div class="mark-progress">
+							
+								<span class="mark-score">In progress</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:0%;"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="ledger-row">
+							<span>IT Developments</span>
+							
+							<div class="mark-progress">
+							
+								<span class="mark-score">In progress</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:0%;"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="ledger-row">
+							<span>Operating Systems</span>
+							
+							<div class="mark-progress">
+							
+								<span class="mark-score">In progress</span>
+								<div class="mark-bar">
+									<div class="mark-fill" style="width:0%;"></div>
+								</div>
+							</div>
 						</div>
 						
 					</div>
 
-				</div>
-
+				</div>	
+					
+				
 			</div>
 			
 			<div class="education-content" id="achievements">
@@ -357,13 +771,14 @@
 				
 				 <div class="achievement-category">
 
-					<h3>Leadership & Committees</h3>
+					<h3>Leadership &amp; Committees</h3>
 
 					<ul>
 						<li>Vice-Captain, Cricket First Team (2019).</li>
-						<li>Held various leadership roles in Jukskei (2014–2022).</li>
-						<li>Member of the Matric Board – Social & Academic Committee (2023).</li>
+						<li>Matric Board – Social &amp; Academic Committee (2023).</li>
+						<li>Held leadership roles in Jukskei (2014–2022).</li>
 						<li>Member of the Klawerhof Ladies Residence Social, Access Control, and Open Day Committees.</li>
+
 					</ul>
 				</div>
 				
@@ -374,12 +789,11 @@
 					<ul>
 						<li>Cricket: Girls' First Team (2019, 2021, 2022).</li>
 						<li>Hockey: Second Team (2019, 2020, 2022).</li>
-						<li>Jukskei: Competed at club, regional, and provincial levels (2014–2022).</li>
-						<li>Represented the Central Gauteng Team in Jukskei (2014–2022).</li>
-						<li>Competed in the South African National Jukskei Championships (2014–2022).</li>
+						<li>Jukskei: Club, regional, provincial and national competitor; represented Central Gauteng (2014–2022)
 					</ul>
 
 				</div>
+			</div>
 		</div>
     </section>
 
@@ -394,31 +808,31 @@
 
         <div class="cert-grid">
 
-            <div class="cert-card" onclick="openCertificate('images/Udemy sertifikaat.jpg')">
+            <div class="cert-card" onclick="openCertificate('images/Udemy-sertifikaat.jpg')">
                 <h3>Practical Web Development</h3>
                 <p>Creative Online School (Udemy)</p>
                 <span>2022 • View Certificate</span>
             </div>
 
-            <div class="cert-card" onclick="openCertificate('documents/certificates/MATLAB Onramp.pdf')">
+            <div class="cert-card" onclick="openCertificate('documents/certificates/MATLAB-Onramp.pdf')">
                 <h3>MATLAB Onramp</h3>
                 <p>MathWorks</p>
                 <span>2024 • View Certificate</span>
             </div>
 			
-			<div class="cert-card" onclick="openCertificate('documents/certificates/Golden Key.pdf')">
+			<div class="cert-card" onclick="openCertificate('documents/certificates/Golden-Key.pdf')">
 				<h3>Golden Key International Honour Society</h3>
 				<p>Membership Certificate</p>
 				<span>2025 • View Certificate</span>
 			</div>
 						
-            <div class="cert-card" onclick="openCertificate('documents/certificates/TryHackMe Certificate.pdf')">
+            <div class="cert-card" onclick="openCertificate('documents/certificates/TryHackMe-Certificate.pdf')">
                 <h3>Pre Security Learning Path</h3>
                 <p>TryHackMe</p>
                 <span>2025 • View Certificate</span>
             </div>
 
-            <div class="cert-card" onclick="openCertificate('documents/certificates/Overview of AI.pdf')">
+            <div class="cert-card" onclick="openCertificate('documents/certificates/Overview-of-AI.pdf')">
                 <h3>Overview of AI</h3>
                 <p>Huawei ICT Academy</p>
                 <span>2026 • View Certificate</span>
@@ -490,8 +904,8 @@
 					
 					<div class="project-links">
 					<a href="https://github.com/Viv120/BurnsBeachProject" target="_blank">Repository</a>
-					<a href="videos\Burns_Beach_Physio_Video.mp4" target="_blank">Watch Demo</a>
-					<a href="documents\Burns_Beach_Physio.pdf" target="_blank">Documentation</a>
+					<a href="videos/Burns_Beach_Physio_Video.mp4" target="_blank">Watch Demo</a>
+					<a href="documents/Burns_Beach_Physio.pdf" target="_blank">Documentation</a>
 				</div>
 			</div>
 			
@@ -524,8 +938,8 @@
 					
 					<div class="project-links">
 					<a href="https://github.com/Viv120/CMPG223-Diagrams" target="_blank">Repository</a>
-					<a href="videos\NWU_Book_Exchange_System.mp4" target="_blank">Watch Demo</a>
-					<a href="documents\NWU_Book_System.pdf" target="_blank">Documentation</a>
+					<a href="videos/NWU_Book_Exchange_System.mp4" target="_blank">Watch Demo</a>
+					<a href="documents/NWU_Book_System.pdf" target="_blank">Documentation</a>
 				</div>
 			</div>
 			
@@ -556,27 +970,72 @@
 					</ul>
 					
 					<div class="project-links">
-					<a href="videos\NexCare_HealthCare.mp4" target="_blank">Watch Demo</a>
-					<a href="documents\NexCare_Healthcare.pdf" target="_blank">Documentation</a>
-				</div>
+						<a href="videos/NexCare_HealthCare.mp4" target="_blank">Watch Demo</a>
+						<a href="documents/NexCare_Healthcare.pdf" target="_blank">Documentation</a>
+					</div>
 			</div>
-			
-			
+		</div>
+	</div>	
 	</section>
 	
 	
 	<section id="experience">
 	<div class="wrap">
+	
 		<div class="section-head reveal">
 			<span class="section-num">05</span>
 			<h2>Experience</h2>
 		</div>
         
-		<h3>Multimedia Assistant - Church Services (Jan 2026 - Current)</h3>
-		<p>Operate ProPresenter software to manage live presentations, lyrics, and media during services.</p>
+		<div class="experience-grid">
 		
-		<h3>Casual Worker - The Local Choice Pharmacy (May 2025 - Current)</h3>
-		<p>Customer service, till operations, stock management, and delivery processing.</p>
+			<div class="experience-card reveal">
+			
+				<span class="tag">Part-Time • Current</span>
+				
+					<h3>Casual Worker</h3>
+					<h4>The Local Choice Pharmacy</h4>
+					<p><em>May 2025 - Present</em></p>
+					
+					<ul>
+						<li>Provide customer service by assisting customers, answering enquiries, and operating the till.</li>
+						<li>Process cash and card transactions accurately while maintaining excellent customer service.</li>
+						<li>Assist with stock replenishment, inventory counts, and delivery processing.</li>
+						<li>Record Cash on Delivery (COD) transactions and support day-to-day pharmacy operations.</li>
+						<li>Adapt between cashier, stock, customer service, and delivery support responsibilities.</li>
+					</ul>	
+			</div>	
+		
+			<div class="experience-card reveal">
+			
+				<span class="tag">Volunteer • Current</span>
+				
+					<h3>Multimedia Assistant</h3>
+					<h4>Church Services (Word and Life Church)</h4>
+					<p><em>January 2026 - Present</em></p>
+					
+					<ul>
+						<li>Operate ProPresenter to manage presentations, lyrics, and multimedia during live services.</li>
+						<li>Provide technical support to the worship team to ensure smooth service delivery.</li>
+					</ul>	
+			</div>	
+			
+			<div class="experience-card reveal">
+
+					<span class="tag">Part-Time</span>
+
+					<h3>Cashier</h3>
+					<h4>School Tuck Shop</h4>
+					<p><em>2022 – 2023</em></p>
+
+					<ul>
+						<li>Handled daily cash transactions accurately in a busy school environment.</li>
+						<li>Provided friendly customer service to students and staff.</li>
+						<li>Developed strong communication, time management, and multitasking skills.</li>
+					</ul>
+			</div>
+        </div>
+	</div>
     </section>
 
 	
@@ -586,6 +1045,7 @@
 				<span class="section-num">06</span>
 				<h2>Skills</h2>
 			</div>
+			
 			<div class="skill-groups">
 				<div class="skill-group reveal">
 					<h3>Programming Languages</h3>
@@ -666,6 +1126,8 @@
 						
 					</div>
 				</div>
+			</div>
+		</div>
     </section>
 	
 	
@@ -678,11 +1140,15 @@
 			<ul class="contact-list reveal">
 				<li><a href="mailto:vivicia.freemantle@gmail.com"><span>Email</span><span>vivicia.freemantle@gmail.com</span></a></li>
 				<li><a href="tel:+27662356896"><span>Phone</span><span>066 235 6896</span></a></li>
-				<li><a href="https://www.linkedin.com/in/vivicia-freemantle-6491b6333/" target="_blank"><span>LinkedIn</span><span>linkedin.com/in/vivicia-freemantle-6491b6333/</span></a></li>
-				<li><a href="https://github.com/Viv120" target="_blank"><span>GitHub</span><span>github.com/Viv120</span></a></li>
+				<li><a href="https://www.linkedin.com/in/vivicia-freemantle-6491b6333/" target="_blank"><span>LinkedIn</span><span>View Profile</span></a></li>
+				<li><a href="https://github.com/Viv120" target="_blank"><span>GitHub</span><span>View Profile</span></a></li>
 			</ul>
 		</div>
-		<div class="wrap foot-note">© 2026 Vivicia Freemantle - Built with HTML, CSS &amp; JavaScript, hosted on GitHub Pages.</div>
+		<div class="wrap foot-note">
+			© 2026 Vivicia Cathryn Freemantle
+			<br>Designed and developed using HTML, CSS &amp; JavaScript
+			<br>Hosted on GitHub Pages.
+		</div>
     </footer>
 
 
@@ -692,8 +1158,11 @@
 		<iframe id="certificatePDF"></iframe>
     </div>
 	
+	<button id="backToTop">
+		<i class="fas fa-chevron-up"></i>
+	</button>
+	
 	<script src="script.js"></script>
-
-
+	
 </body>
 </html>
