@@ -9,7 +9,13 @@
 <body>
 
 	<nav>
-		<div class="logo">VCF Portfolio</div>
+		<a href="home" class="logo">
+			<img src="images/Logo.png" alt="Logo">
+			<div class="logo-text">
+				<span class="logo-name">Vivicia Cathryn Freemantle</span>
+				<span class="logo-title">IT Student</span>
+			</div>
+		</a>
 		
 		<ul>
 			<li><a href="#home">Home</a></li>
@@ -19,7 +25,6 @@
 			<li><a href="#projects">Projects</a></li>
 			<li><a href="#experience">Experience</a></li>
 			<li><a href="#skills">Skills</a></li>
-			<li><a href="#achievements">Achievements</a></li>
 			<li><a href="#contact">Contact</a></li>
 			<li>
 				<a href="documents/Vivicia_Freemantle_CV.pdf" target="_blank">
@@ -33,7 +38,7 @@
 	
 		<div class="hero-left">
 			<p class="subtitle">
-				BSC Information Technology - North-West University
+				BSC Information Technology | North-West University
 			</p>
 		
 			
@@ -42,12 +47,11 @@
 				<span>Portfolio Website</span>
 			</h1>
 			
-			<h3>Final-Year BSc Information Technology Student</h3>
+			<h3>Final-Year BSc IT Student</h3>
 			
 			<p class="hero-text">
-				Final-year Information Technology student passionate about
-				data analytics, databases, software development, and web technologies.
-				Golden Key International Honour Society member.
+				Passionate about data analytics, databases, software development, and web technologies. <br>
+				Golden Key International Honour Society member seeking opportunities to apply technical and analytical skills in industry.
 			</p>
 			
 			<div class="buttons">
@@ -159,64 +163,76 @@
 			
 			<div class="education-content active" id="education">
 			
-				<div class="education-card">
+				<div class="education-grid">
 				
-					<br>
-					<h3>North-West University (2024 - Present)</h3>
+					<div class="education-card">
 					
-					<p>
-						<strong>Bachelor of Science (BSc) in Information Technology</strong><br>
-						2024 - Present
-					</p>
+						<h3>North-West University (2024 - Present)</h3>
+						
+						<p>
+							<strong>Bachelor of Science (BSc) in Information Technology</strong><br>
+							2024 - Present
+						</p>
+						
+						<ul>
+							<li>Expected Graduation: December 2026.</li>
+							<li>Completed 328/392 credits toward my degree</li>
+							<li>Golden Key International Honour Society Member (Top 15%)</li>
+						</ul>
+					</div>
+
+					<div class="education-coursework">
 					
-					<ul>
-						<li>Expected Graduation: December 2026.</li>
-						<li>Completed 328/392 credits toward my degree</li>
-						<li>Golden Key International Honour Society Member (Top 15%)</li>
-					</ul>
-				<br>	
-				<h4>Relevant Coursework</h4>
+						<h4>Key Areas of Study</h4>
+					
+						<div class="pill-row">
+						
+							<span class="pill">Programming</span>
+							<span class="pill">Software Development</span>
+							<span class="pill">Database Systems</span>
+							<span class="pill">Web Development</span>
+							<span class="pill">Artificial Intelligence</span>
+							<span class="pill">Computer Networks</span>
+							<span class="pill">Information Security</span>
+							<span class="pill">Data Analytics</span>
+							<span class="pill">Decision Support Systems</span>
+							<span class="pill">Statistics</span>
+							
+						</div>
+					</div>
+				</div>
 				
-				<div class="pill-row">
+				<div class="education-grid">
 				
-					<span class="pill">Programming</span>
-					<span class="pill">Software Development</span>
-					<span class="pill">Database Systems</span>
-					<span class="pill">Web Development</span>
-					<span class="pill">Artificial Intelligence</span>
-					<span class="pill">Computer Networks</span>
-					<span class="pill">Decision Support Systems</span>
-					<span class="pill">Statistics</span>
-					<span class="pill">Data Analytics</span>
+					<div class="education-card">
+						
+						<h3>Leeuwenhof Akademie, Bedfordview</h3>
+							
+						<p>
+							<strong>National Senior Certificate (IEB) / Grade 12</strong><br>
+							 Graduated: 2023
+						</p>
+							
+					</div>
+						
+					<div class="education-coursework">
+						
+						<h4>Subjects</h4>
+							
+						<div class="pill-row">
+
+							<span class="pill">Life Orientation</span>
+							<span class="pill">Mathematics</span>
+							<span class="pill">Computer Applications Technology</span>
+							<span class="pill">Physical Sciences</span>
+							<span class="pill">Life Sciences</span>
+							<span class="pill">English FAL</span>
+							<span class="pill">Afrikaans HL</span>
+							
+						</div>
+					</div>
 				</div>
 			</div>
-			
-			<br><br>
-			
-			<div class="education-card">
-			
-				<h3>Leeuwenhof Akademie, Bedfordview</h3>
-				
-				<p>
-					<strong>National Senior Certificate (IEB) / Grade 12</strong><br>
-					 Graduated: 2023
-				</p>
-				
-				<h4>Subjects</h4>
-				
-				<div class="pill-row">
-
-					<span class="pill">Mathematics</span>
-					<span class="pill">Computer Applications Technology</span>
-					<span class="pill">Physical Sciences</span>
-					<span class="pill">Life Sciences</span>
-					<span class="pill">English FAL</span>
-					<span class="pill">Afrikaans HL</span>
-					<span class="pill">Life Orientation</span>
-
-				</div>
-			</div>
-		</div>
 			
 			<div class="education-content" id="results">
 
@@ -367,30 +383,61 @@
     </section>
 
 
-    </section>
-
-
 	<section id="certifications">
 	<div class="wrap">
+	
 		<div class="section-head reveal">
-			<span class="section-num">04</span>
+			<span class="section-num">03</span>
 			<h2>Certifications</h2>
 		</div>
-        
-		<ul>
-			<li>Creative Online School (Udemy) - Practical Web Development (2022)</li>			
-			<li>MathWorks - MATLAB Onramp (2024)</li>
-			<li>Try Hack Me (Udemy) - Pre Security Learning Path (2025)</li>
-			<li>Huawei ICT Academy - Overview of AI (2026)</li>
-			<li>365 Careers (Udemy) - Data Science Bootcamp (In Progess, 2026)</li>
-		</ul>
+
+        <div class="cert-grid">
+
+            <div class="cert-card" onclick="openCertificate('images/Udemy sertifikaat.jpg')">
+                <h3>Practical Web Development</h3>
+                <p>Creative Online School (Udemy)</p>
+                <span>2022 • View Certificate</span>
+            </div>
+
+            <div class="cert-card" onclick="openCertificate('documents/certificates/MATLAB Onramp.pdf')">
+                <h3>MATLAB Onramp</h3>
+                <p>MathWorks</p>
+                <span>2024 • View Certificate</span>
+            </div>
+			
+			<div class="cert-card" onclick="openCertificate('documents/certificates/Golden Key.pdf')">
+				<h3>Golden Key International Honour Society</h3>
+				<p>Membership Certificate</p>
+				<span>2025 • View Certificate</span>
+			</div>
+						
+            <div class="cert-card" onclick="openCertificate('documents/certificates/TryHackMe Certificate.pdf')">
+                <h3>Pre Security Learning Path</h3>
+                <p>TryHackMe</p>
+                <span>2025 • View Certificate</span>
+            </div>
+
+            <div class="cert-card" onclick="openCertificate('documents/certificates/Overview of AI.pdf')">
+                <h3>Overview of AI</h3>
+                <p>Huawei ICT Academy</p>
+                <span>2026 • View Certificate</span>
+            </div>
+
+            <div class="cert-card">
+                <h3>Data Science Bootcamp</h3>
+                <p>365 Careers (Udemy)</p>
+                <span>Currently In Progress • 2026</span>
+            </div>
+        </div>
+
+    </div>
 	</section>
 	
 	
 	<section id="projects">
 		<div class="wrap">
 			<div class="section-head reveal">
-				<span class="section-num">05</span>
+				<span class="section-num">04</span>
 				<h2>Projects</h2>
 			</div>
 			<div class="project-grid">
@@ -501,7 +548,7 @@
 	<section id="experience">
 	<div class="wrap">
 		<div class="section-head reveal">
-			<span class="section-num">06</span>
+			<span class="section-num">05</span>
 			<h2>Experience</h2>
 		</div>
         
@@ -516,7 +563,7 @@
     <section id="skills">
 		<div class="wrap">
 			<div class="section-head reveal">
-				<span class="section-num">07</span>
+				<span class="section-num">06</span>
 				<h2>Skills</h2>
 			</div>
 			<div class="skill-groups">
@@ -619,6 +666,12 @@
     </footer>
 
 
+	<div id="certificateModal" class="certificate-modal">
+        <span class="close-modal" onclick="closeCertificate()">&times;</span>
+        <img id="certificateImage" src="" alt="Certificate">
+		<iframe id="certificatePDF"></iframe>
+    </div>
+	
 	<script src="script.js"></script>
 
 
