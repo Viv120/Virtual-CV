@@ -1273,10 +1273,50 @@ footer{
     }
 
     .credit-card{
-		width:100%
+		width:100%;
         max-width:320px;
     }
 
+	.ledger-row.head{
+		display:none;
+	}
+
+	.ledger-row{
+		display:flex;
+		flex-direction:column;
+		align-items:flex-start;
+		gap:12px;
+		padding:18px;
+	}
+
+	.ledger-row > span:first-child{
+		width:100%;
+		font-size:1rem;
+		font-weight:600;
+		line-height:1.5;
+	}
+
+	.mark-progress{
+		width:100%;
+		display:flex;
+		flex-direction:column;
+		align-items:flex-start;
+		gap:8px;
+	}
+
+	.mark-score{
+		font-size:1.1rem;
+		font-weight:700;
+		color:var(--primary);
+	}
+
+	.mark-bar{
+		width:100%;
+	}
+
+	.mark-fill{
+		height:10px;
+	}
     .buttons{
 		display:flex;
 		flex-direction:column;
@@ -1290,40 +1330,6 @@ footer{
         width:100%;
         text-align:center;
     }
-	
-	.results-header{
-    display:none;
-}
-
-	.result-row{
-		display:flex;
-		flex-direction:column;
-		align-items:flex-start;
-		gap:12px;
-		padding:20px;
-	}
-
-	.module-name{
-		width:100%;
-		font-size:1rem;
-		line-height:1.5;
-	}
-
-	.grade{
-		width:100%;
-		text-align:left;
-		font-size:1.2rem;
-		font-weight:700;
-		color:var(--primary);
-	}
-
-	.progress-bar{
-		width:100%;
-	}
-
-	.progress{
-		width:100%;
-	}
 
     .section-head h2{
         font-size:1.8rem;
