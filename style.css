@@ -1173,8 +1173,13 @@ footer{
 	}
 
 	nav li{
+		border-bottom:1px solid var(--border);
 		width:100%;
 	}
+	
+	nav li:last-child{
+        border-bottom:none;
+    }
 
 	nav a{
 		display:block;
@@ -1183,26 +1188,43 @@ footer{
 	}
 
     .hero{
-        text-align:center;
-        min-height:auto;
-        padding-top:120px;
+        display:flex;
+		flex-direction:column-reverse;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+		gap:35px;
+		min-height:auto;
+		padding:120px 20px 60px;
+    }
+	
+	.hero-left{
+        margin-top:10px;
     }
 
-    .about-grid,
-    .contact-grid{
-        grid-template-columns:1fr;
+	.hero h1{
+        font-size:clamp(2.4rem,6vw,3rem);
+        line-height:1.2;
     }
-
-    .project-grid{
-        grid-template-columns:1fr;
+	
+	.hero-text{
+        max-width:95%;
+        margin:0 auto;
+        font-size:1.05rem;
+        line-height:1.8;
     }
 
     .buttons{
+        display:flex;
         justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
     }
-
-    .hero h1{
-        font-size:2.7rem;
+	
+    .about-grid,
+    .contact-grid,
+	.project-grid{
+        grid-template-columns:1fr;
     }
 
     .section-head{
@@ -1210,8 +1232,13 @@ footer{
         align-items:flex-start;
     }
 
+	.section-head h2{
+    font-size:2rem;
+	}
+	
     .section-num{
         font-size:2rem;
+		margin-bottom:5px;
     }
 }
 
@@ -1222,38 +1249,54 @@ footer{
     }
 
     .hero{
-        padding:100px 20px 50px;
+        padding:90px 20px 40px;
+		gap:25px;
     }
 
     .hero h1{
-        font-size:2rem;
+        font-size:clamp(2rem,8vw,3rem);
+		line-height:1.2;
     }
 
     .hero-text{
         font-size:1rem;
+		line-height:1.8;
+		max-width:100%;
+		margin:0 auto;
     }
 
     .profile-photo{
-        width:220px;
-        height:220px;
+        width:180px;
+        height:180px;
+		object-fit:cover;
+		object-position:center top;
     }
 
     .credit-card{
-        width:100%;
+		width:100%
+        max-width:320px;
     }
 
     .buttons{
-        flex-direction:column;
+		display:flex;
+		flex-direction:column;
+		width:100%;
+		gap:15px;
     }
 
-    .btn-primary,
+    .btn,
+	.btn-primary,
     .btn-secondary{
         width:100%;
         text-align:center;
     }
 
-    .project-grid{
-        grid-template-columns:1fr;
+    .section-head h2{
+        font-size:1.8rem;
+    }
+
+    .section-num{
+        font-size:1.6rem;
     }
 
     .contact-grid{
